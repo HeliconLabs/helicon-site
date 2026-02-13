@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#081226"/>
+  <circle cx="1020" cy="90" r="220" fill="#1A355B" opacity=".55"/>
+  <circle cx="170" cy="560" r="220" fill="#123E58" opacity=".55"/>
+  <rect x="90" y="120" width="1020" height="390" rx="24" fill="#0E1B31" stroke="#2A4D7A"/>
+  <text x="140" y="260" fill="#E8F2FF" font-family="monospace" font-size="72" font-weight="700">HELICON LABS</text>
+  <text x="140" y="330" fill="#77C7FF" font-family="monospace" font-size="32">Engineering Governance &amp; Automation</text>
+  <text x="140" y="405" fill="#9CB6D9" font-family="monospace" font-size="24">fleetu-ideacao | fleetu-app | fleetu-infra</text>
+</svg>

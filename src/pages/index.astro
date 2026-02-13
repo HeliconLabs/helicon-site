@@ -1,17 +1,127 @@
 ---
-
+import '../styles/global.css';
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helicon Labs | Engineering Governance</title>
+    <meta
+      name="description"
+      content="Helicon Labs builds engineering governance and automation products. Fleetu is in active MVP development."
+    />
+    <meta property="og:title" content="Helicon Labs | Engineering Governance" />
+    <meta
+      property="og:description"
+      content="We build systems to orchestrate engineering change at scale, with safety and auditability."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://heliconlabs.dev" />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0a1322" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="wrapper header">
+        <p class="badge">System Status: Online</p>
+        <h1 class="title">HELICON LABS</h1>
+        <p class="subtitle">
+          Building practical systems for engineering governance and automation.
+          MVP in active development, focused on scalable change orchestration with
+          clear audit trails.
+        </p>
+
+        <article class="panel" aria-label="Helicon bootstrap terminal">
+          <div class="panel-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="panel-title">Helicon Boot Console</span>
+          </div>
+          <div class="terminal">
+            <p class="line l1">&gt; Initializing governance runtime...</p>
+            <p class="line l2">
+              &gt; Loading module: <strong>Fleetu</strong> (Engineering Governance)
+            </p>
+            <p class="line l3">
+              &gt; Validating control-plane architecture: <strong>orchestrator-first</strong>
+            </p>
+            <p class="line l4">&gt; Establishing order in the software fleet.</p>
+          </div>
+        </article>
+
+        <section class="grid" aria-label="company overview">
+          <article class="card span-4">
+            <h3>What We Build</h3>
+            <p>
+              Products that help engineering teams ship organization-wide technical
+              changes with predictable rollout, governance, and observability.
+            </p>
+          </article>
+
+          <article class="card span-4">
+            <h3>Current Status</h3>
+            <ul>
+              <li>SaaS multi-tenant architecture defined</li>
+              <li>GitHub-first integration strategy in place</li>
+              <li>MVP use case: dependency update orchestration</li>
+            </ul>
+          </article>
+
+          <article class="card span-4">
+            <h3>Contact</h3>
+            <p>
+              hello@heliconlabs.dev
+            </p>
+            <p>
+              Based in Brazil, building for global engineering organizations.
+            </p>
+          </article>
+
+          <article class="card span-8">
+            <h3>Repository Hub</h3>
+            <div class="repo-list">
+              <a class="repo-link" href="https://github.com/HeliconLabs/fleetu-ideacao" target="_blank" rel="noreferrer noopener">
+                fleetu-ideacao
+                <small>Product vision, specs, and architecture decisions (ADR).</small>
+              </a>
+              <a class="repo-link" href="https://github.com/HeliconLabs/fleetu-app" target="_blank" rel="noreferrer noopener">
+                fleetu-app
+                <small>Application implementation (web, API, and shared contracts).</small>
+              </a>
+              <a class="repo-link" href="https://github.com/HeliconLabs/fleetu-infra" target="_blank" rel="noreferrer noopener">
+                fleetu-infra
+                <small>Infrastructure as code, environments, and operational baseline.</small>
+              </a>
+            </div>
+          </article>
+
+          <article class="card span-4">
+            <h3>Why Helicon</h3>
+            <p>
+              Keep the control plane lean. Run execution in customer infrastructure.
+              Scale through clear contracts instead of platform lock-in.
+            </p>
+          </article>
+        </section>
+
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/HeliconLabs" target="_blank" rel="noreferrer noopener">Open GitHub Org</a>
+          <a class="btn" href="https://github.com/HeliconLabs/.github" target="_blank" rel="noreferrer noopener">Org Profile</a>
+        </div>
+
+        <footer class="footer">© {new Date().getFullYear()} Helicon Labs</footer>
+      </section>
+    </main>
+  </body>
 </html>
