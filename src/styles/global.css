@@ -10,6 +10,15 @@
   --ok: #79f1c4;
 }
 
+@font-face {
+  font-family: "Foundation Logo";
+  src: url("/fonts/FoundationLogo.woff2") format("woff2"),
+       url("/fonts/FoundationLogo.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -78,6 +87,14 @@ main::after {
   text-align: center;
 }
 
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -102,6 +119,37 @@ main::after {
   animation: pulse 2s ease-in-out infinite;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem;
+  background: rgba(10, 20, 34, 0.48);
+}
+
+.lang-pill {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 999px;
+  padding: 0.34rem 0.48rem;
+  transition: color 120ms ease, background-color 120ms ease;
+}
+
+.lang-pill:hover {
+  color: #d6e6ff;
+}
+
+.lang-pill.active {
+  color: #ecf5ff;
+  background: rgba(75, 185, 255, 0.18);
+}
+
 @keyframes pulse {
   0%, 100% { opacity: 0.7; }
   50% { opacity: 1; }
@@ -109,11 +157,13 @@ main::after {
 
 .title {
   margin: 1.2rem 0 0.75rem;
-  font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
-  font-size: clamp(2.1rem, 5.3vw, 4.4rem);
+  font-family: "Foundation Logo", "Orbitron", "Eurostile", "Avenir Next", "Segoe UI", sans-serif;
+  font-size: clamp(2rem, 5.2vw, 4.25rem);
   line-height: 1.02;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #f0f6ff;
+  text-shadow: 0 0 22px rgba(75, 185, 255, 0.2);
 }
 
 .subtitle {
@@ -220,31 +270,18 @@ main::after {
   padding-left: 1rem;
 }
 
-.repo-list {
-  display: grid;
-  gap: 0.65rem;
-  margin-top: 0.6rem;
-}
-
-.repo-link {
-  display: block;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 10px;
-  padding: 0.7rem 0.8rem;
+.card-link {
+  display: inline-block;
+  margin-top: 0.45rem;
+  color: #b8dcff;
   text-decoration: none;
-  color: #d3e3fb;
-  background: rgba(10, 19, 31, 0.7);
+  border-bottom: 1px solid rgba(184, 220, 255, 0.4);
+  padding-bottom: 0.06rem;
 }
 
-.repo-link:hover {
-  border-color: rgba(75, 185, 255, 0.55);
-  box-shadow: 0 0 0 1px rgba(75, 185, 255, 0.2) inset;
-}
-
-.repo-link small {
-  display: block;
-  color: #87a3cc;
-  margin-top: 0.25rem;
+.card-link:hover {
+  color: #e5f4ff;
+  border-bottom-color: rgba(229, 244, 255, 0.7);
 }
 
 .cta {
