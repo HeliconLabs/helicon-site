@@ -1,25 +1,24 @@
 # Helicon Site
 
-Public landing page for Helicon Labs, built with Astro.
+Landing publica da Helicon Labs, feita com Astro.
+
+## Objetivo
+
+Publicar o posicionamento institucional da Helicon Labs.
 
 ## Stack
 
-- Astro (static output)
-- Custom CSS (no framework dependency)
-- Package manager: pnpm (via Corepack)
-- Deploy target: Cloudflare Pages
+1. Astro (static output)
+2. CSS custom
+3. `pnpm` via Corepack
+4. Deploy em Cloudflare Pages
 
-## Local Setup
+## Setup Local
 
 ```bash
 corepack enable
 corepack prepare pnpm@10.4.0 --activate
 pnpm install
-```
-
-## Run Local
-
-```bash
 pnpm dev
 ```
 
@@ -29,17 +28,15 @@ pnpm dev
 pnpm build
 ```
 
-Output directory: `dist/`
+Saida: `dist/`
 
-## Deploy on Cloudflare Pages
+## Deploy (Cloudflare Pages)
 
-1. Create a new Pages project and connect this repository.
-2. Build command: `pnpm build`
-3. Build output directory: `dist`
-4. Node.js version: `22`
-5. Add custom domain: `heliconlabs.dev`
+1. Build command: `pnpm build`
+2. Output directory: `dist`
+3. Node.js: `22`
 
-## Links
+## Relacionados
 
-- GitHub org: https://github.com/HeliconLabs
-- Product docs/spec: https://github.com/HeliconLabs/fleetu-ideacao
+1. Organizacao: https://github.com/HeliconLabs
+2. Produto/spec Fleetu: https://github.com/HeliconLabs/fleetu-ideacao
